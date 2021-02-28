@@ -1,0 +1,43 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00AD9C;
+}
+.container{
+    position: relative;
+    height: 70vh;
+    width: 30vw;
+    background-color: burlywood;
+}
+
+.befor-container,.after-container{
+    position:absolute;
+    height: 70vh;
+    width: 30vw;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+img{
+    height: 70vh;
+    width: 30vw;
+    object-fit: cover;
+}
+.slider{
+    height: 70vh;
+    width: 0.3rem;
+    position: absolute;
+    background-color:chartreuse;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    pointer-events: none;
+}
+
